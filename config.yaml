@@ -1,4 +1,8 @@
+# time in seconds between polling kafka UI endpoint
 pollingIntervalSeconds: 5
+# port to export metrics to prometheus
 exporterPort: 9877
+# kafka UI endpoint
 path: http://192.168.41.36:8080/api/clusters/prod-cluster/consumer-groups/paged
+# verbose logging
 verbose: true
