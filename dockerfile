@@ -14,9 +14,9 @@ FROM alpine:latest
 
 WORKDIR /app
 
-COPY --from=builder /app/exporter /exporter
-COPY --from=builder /app/config.yaml /config.yaml
+COPY --from=builder /app/exporter /app/exporter
+COPY --from=builder /app/config.yaml /app/config.yaml
 
 EXPOSE 9877
 
-CMD ["/exporter"]
+CMD ["/app/exporter"]
