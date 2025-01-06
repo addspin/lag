@@ -1,0 +1,4 @@
+pollingIntervalSeconds: 5
+exporterPort: 9877
+path: http://192.168.41.36:8080/api/clusters/prod-cluster/consumer-groups/paged
+verbose: true
