@@ -12,6 +12,8 @@ RUN CGO_ENABLED=0 GOOS=linux go build -o exporter ./main.go
 
 FROM alpine:latest
 
+WORKDIR /app
+
 COPY --from=builder /app/exporter /exporter
 COPY --from=builder /app/config.yaml /config.yaml
 
